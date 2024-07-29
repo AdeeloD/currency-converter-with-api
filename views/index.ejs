@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" type="text/css" href="/styles/main.css">
+</head>
+<body>
+    <h1>Currency Converter</h1>
+    <div class="container">
+        <div class="Cu">
+            <label for="from-currency-select">From:</label>
+            <select id="from-currency-select"></select>
+        </div>
+        <div class="Cu">
+            <label for="to-currency-select">To:</label>
+            <select id="to-currency-select"></select>
+        </div>
+        <button id="convert-button">Convert</button>
+    </div>
+    <div class="amount-result-gap">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" />
+    </div>
+    <div id="result"></div>
+
+    <script>
+        let apiKey = '<%= apiKey %>';
+    </script>
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
